@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- rewrits xsd files - add "extra" to xsd -->
+    <preference for="Magento\Widget\Model\Config\SchemaLocator" type="Inkl\WidgetExtXsd\Rewrite\Magento\Widget\Model\Config\SchemaLocator"/>
+
+    <!-- handle "extra" in converter -->
+    <preference for="Magento\Widget\Model\Config\Converter" type="Inkl\WidgetExtXsd\Rewrite\Magento\Widget\Model\Config\Converter"/>
+</config>
